@@ -62,6 +62,9 @@ public:
   // std::tuple<EigenVectorX3dr, EigenVectorX1d>
   // flowMap(EigenVectorX3dr &position, EigenVectorX1d &protein, double h);
 
+  // std::tuple<EigenVectorX3dr, EigenVectorX1d>
+  // flowMap(EigenVectorX3dr &position, EigenVectorX1d &protein, double h);
+
   /**
    * @brief Forward Euler status computation and thresholding
    */
