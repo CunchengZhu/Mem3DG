@@ -307,7 +307,7 @@ public:
     surfaceArea = vpg->faceAreas.raw().sum();
     updateReferenceConfigurations();
     if (!mesh->hasBoundary() && mesh->genus() != 0) {
-      mem3dg_runtime_error(
+      mem3dg_runtime_message(
           "Do not support closed mesh with nonzero number of genus!")
     }
   }

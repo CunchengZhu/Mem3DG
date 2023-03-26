@@ -1011,6 +1011,14 @@ PYBIND11_MODULE(_core, pymem3dg) {
           return: NDarray[double]
       )delim");
 
+  /**
+   * @brief Method: I/O
+   */
+  geometry.def("saveGeometry", &Geometry::saveGeometry, py::arg("pathToSave"),
+             R"delim(
+          save snapshot data to directory
+      )delim");
+
 #pragma enregion geometry
 
 #pragma region system
